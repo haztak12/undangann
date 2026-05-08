@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Undangan Tasyakuran Haji - Hatimah, S.HI.</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#07130d;
+  color:white;
+  overflow-x:hidden;
+}
+
+.bg{
+  position:fixed;
+  inset:0;
+  background:
+    linear-gradient(rgba(2,12,7,.64),rgba(2,12,7,.92)),
+    url('https://images.unsplash.com/photo-1564769662533-4f00a87b4056?auto=format&fit=crop&w=1600&q=80');
+  background-size:cover;
+  background-position:center;
+  z-index:-4;
+  animation:zoomBg 22s ease-in-out infinite alternate;
+}
+@keyframes zoomBg{
+  from{transform:scale(1)}
+  to{transform:scale(1.12)}
+}
+
+.gold-glow{
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(circle at top,rgba(231,190,103,.28),transparent 45%),
+    radial-gradient(circle at bottom,rgba(23,124,76,.23),transparent 40%);
+  z-index:-3;
+}
+
+.particles span{
+  position:fixed;
+  bottom:-20px;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:#e7c46b;
+  opacity:.65;
+  animation:floatUp linear infinite;
+  z-index:-2;
+}
+@keyframes floatUp{
+  from{transform:translateY(0) scale(.8);opacity:0}
+  20%{opacity:1}
+  to{transform:translateY(-110vh) scale(1.2);opacity:0}
+}
+
+.cover{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:22px;
+  text-align:center;
+}
+
+.card{
+  width:100%;
+  max-width:850px;
+  padding:58px 24px;
+  background:rgba(255,255,255,.085);
+  backdrop-filter:blur(13px);
+  border:1px solid rgba(231,196,107,.28);
+  border-radius:32px;
+  box-shadow:0 25px 70px rgba(0,0,0,.55);
+  animation:fadeIn 1.4s ease both;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(38px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.bismillah{
+  font-family:'Amiri',serif;
+  font-size:32px;
+  color:#f2d78b;
+  margin-bottom:18px;
+}
+
+.small{
+  letter-spacing:4px;
+  text-transform:uppercase;
+  font-size:13px;
+  color:#f2d78b;
+  margin-bottom:15px;
+}
+
+.guest{
+  display:none;
+  margin:0 auto 25px;
+  padding:18px 14px;
+  max-width:520px;
+  border-radius:22px;
+  background:rgba(0,0,0,.25);
+  border:1px solid rgba(242,215,139,.22);
+}
+
+.guest p{
+  color:#f8ecd1;
+  font-size:17px;
+}
+
+.guest h3{
+  margin-top:8px;
+  color:#f2d78b;
+  font-size:30px;
+  font-weight:700;
+}
+
+h1{
+  font-family:'Amiri',serif;
+  font-size:clamp(42px,8vw,78px);
+  line-height:1.15;
+  color:#f2d78b;
+  text-shadow:0 0 24px rgba(242,215,139,.34);
+}
+
+.name{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(64px,13vw,120px);
+  line-height:1;
+  color:#fff5d7;
+  margin:14px 0 8px;
+}
+
+.subtitle{
+  color:#f8ecd1;
+  font-size:18px;
+  line-height:1.9;
+  margin-top:18px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:15px 36px;
+  background:linear-gradient(135deg,#f2d78b,#b68b36);
+  color:#16220f;
+  text-decoration:none;
+  font-weight:700;
+  border-radius:999px;
+  transition:.3s;
+  border:none;
+  cursor:pointer;
+  box-shadow:0 12px 30px rgba(0,0,0,.32);
+}
+
+.btn:hover{
+  transform:translateY(-4px) scale(1.03);
+}
+
+section{
+  padding:88px 20px;
+}
+
+.box{
+  max-width:930px;
+  margin:auto;
+  padding:48px 24px;
+  background:rgba(255,255,255,.085);
+  border-radius:30px;
+  backdrop-filter:blur(11px);
+  border:1px solid rgba(242,215,139,.2);
+  box-shadow:0 20px 60px rgba(0,0,0,.42);
+  text-align:center;
+}
+
+h2{
+  font-family:'Amiri',serif;
+  font-size:clamp(34px,7vw,58px);
+  color:#f2d78b;
+  margin-bottom:18px;
+}
+
+p{
+  color:#f8f0df;
+  line-height:1.9;
+  font-size:16px;
+}
+
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  margin-top:32px;
+}
+
+.info-card{
+  padding:25px 18px;
+  border-radius:23px;
+  background:rgba(0,0,0,.28);
+  border:1px solid rgba(242,215,139,.17);
+}
+
+.info-card strong{
+  display:block;
+  color:#f2d78b;
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.countdown{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin-top:34px;
+}
+
+.time{
+  padding:18px 10px;
+  background:rgba(0,0,0,.34);
+  border:1px solid rgba(242,215,139,.18);
+  border-radius:20px;
+}
+
+.time span{
+  display:block;
+  color:#f2d78b;
+  font-size:34px;
+  font-weight:700;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+  margin-top:30px;
+}
+
+.gallery img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  border-radius:23px;
+  transition:.4s;
+  filter:sepia(.12) contrast(1.05);
+}
+
+.gallery img:hover{
+  transform:scale(1.04);
+}
+
+.quote{
+  font-family:'Amiri',serif;
+  font-size:23px;
+  color:#f2d78b;
+  margin-bottom:18px;
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(42px);
+  transition:1s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.music{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:60px;
+  height:60px;
+  border:none;
+  border-radius:50%;
+  font-size:22px;
+  background:linear-gradient(135deg,#f2d78b,#b68b36);
+  color:#16220f;
+  cursor:pointer;
+  z-index:99;
+  box-shadow:0 10px 28px rgba(0,0,0,.5);
+}
+
+.music.playing{
+  animation:spin 4s linear infinite;
+}
+
+@keyframes spin{
+  to{transform:rotate(360deg)}
+}
+
+footer{
+  padding:40px 20px;
+  text-align:center;
+  background:rgba(0,0,0,.38);
+}
+
+@media(max-width:700px){
+  .countdown{grid-template-columns:repeat(2,1fr)}
+  .card{padding:45px 18px}
+  .bismillah{font-size:27px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+<div class="gold-glow"></div>
+<div class="particles" id="particles"></div>
+
+<button class="music" id="musicBtn">♫</button>
+
+<section class="cover">
+  <div class="card">
+    <div class="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+
+    <div class="small">Undangan Tasyakuran Haji</div>
+
+    <div class="guest" id="guestWrapper">
+      <p>Kepada Yth.</p>
+      <h3 id="guestName"></h3>
+    </div>
+
+    <h1>Tasyakuran Haji</h1>
+
+    <div class="name">Hatimah, S.HI.</div>
+
+    <p class="subtitle">
+      Dengan penuh rasa syukur kepada Allah SWT,<br>
+      kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara tasyakuran haji.
+    </p>
+
+    <p class="subtitle">
+      Sabtu, 06 Juni 2026
+    </p>
+
+    <a href="#undangan" class="btn" id="openBtn">Buka Undangan</a>
+  </div>
+</section>
+
+<section id="undangan" class="reveal">
+  <div class="box">
+    <h2>Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
+    <p>
+      Puji syukur ke hadirat Allah SWT atas limpahan rahmat dan karunia-Nya.
+      Dengan penuh rasa syukur, kami bermaksud menyelenggarakan acara
+      tasyakuran haji atas kepulangan dan penyempurnaan ibadah haji:
+    </p>
+
+    <div style="margin-top:28px;">
+      <div class="name" style="font-size:72px;">Hatimah, S.HI.</div>
+    </div>
+
+    <p>
+      Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+      Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa dan silaturahmi.
+    </p>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="box">
+    <h2>Waktu & Tempat</h2>
+    <p>Insya Allah acara akan dilaksanakan pada:</p>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <strong>Hari / Tanggal</strong>
+        <p>Sabtu, 06 Juni 2026</p>
+      </div>
+
+      <div class="info-card">
+        <strong>Waktu</strong>
+        <p>10.00 WITA - Selesai</p>
+      </div>
+
+      <div class="info-card">
+        <strong>Tempat</strong>
+        <p>Sidrap, Sulawesi Selatan</p>
+      </div>
+    </div>
+
+    <div class="countdown">
+      <div class="time"><span id="days">0</span>Hari</div>
+      <div class="time"><span id="hours">0</span>Jam</div>
+      <div class="time"><span id="minutes">0</span>Menit</div>
+      <div class="time"><span id="seconds">0</span>Detik</div>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="box">
+    <h2>Lokasi Acara</h2>
+    <p>
+      Acara tasyakuran haji akan dilaksanakan di Sidrap.
+      Silakan tekan tombol di bawah untuk membuka lokasi melalui Google Maps.
+    </p>
+
+    <a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Sidrap+Sulawesi+Selatan">
+      Buka Google Maps
+    </a>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="box">
+    <h2>Galeri Nuansa Haji</h2>
+    <p>Semoga menjadi haji yang mabrur dan penuh keberkahan.</p>
+
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=900&q=80" alt="Ka'bah">
+      <img src="https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?auto=format&fit=crop&w=900&q=80" alt="Masjid">
+      <img src="https://images.unsplash.com/photo-1564769662533-4f00a87b4056?auto=format&fit=crop&w=900&q=80" alt="Islamic architecture">
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="box">
+    <div class="quote">
+      “Ya Allah, jadikanlah ibadah haji ini haji yang mabrur, sa’i yang diterima, dan dosa yang diampuni.”
+    </div>
+
+    <p>
+      Atas kehadiran dan doa restu Bapak/Ibu/Saudara/i,
+      kami ucapkan terima kasih.
+    </p>
+
+    <p style="margin-top:20px;">
+      Wassalamu'alaikum Warahmatullahi Wabarakatuh
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>Tasyakuran Haji</p>
+  <p>Hatimah, S.HI. • 06 Juni 2026</p>
+</footer>
+
+<script>
+/* NAMA TAMU OTOMATIS */
+const params = new URLSearchParams(window.location.search);
+const guest = params.get("to");
+
+if (guest) {
+  document.getElementById("guestWrapper").style.display = "block";
+  document.getElementById("guestName").innerText = guest;
+}
+
+/* PARTIKEL */
+const particles = document.getElementById("particles");
+
+for(let i=0;i<55;i++){
+  const span=document.createElement("span");
+  span.style.left=Math.random()*100+"vw";
+  span.style.animationDuration=(7+Math.random()*12)+"s";
+  span.style.animationDelay=Math.random()*6+"s";
+  span.style.opacity=.25 + Math.random()*.7;
+  particles.appendChild(span);
+}
+
+/* REVEAL ANIMATION */
+const reveals=document.querySelectorAll(".reveal");
+
+function reveal(){
+  reveals.forEach(el=>{
+    const top=el.getBoundingClientRect().top;
+    if(top<window.innerHeight-100){
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll",reveal);
+reveal();
+
+/* COUNTDOWN */
+const targetDate=new Date("June 6, 2026 10:00:00 GMT+0800").getTime();
+
+function countdown(){
+  const now=new Date().getTime();
+  const distance=targetDate-now;
+
+  if(distance <= 0){
+    document.getElementById("days").innerHTML=0;
+    document.getElementById("hours").innerHTML=0;
+    document.getElementById("minutes").innerHTML=0;
+    document.getElementById("seconds").innerHTML=0;
+    return;
+  }
+
+  document.getElementById("days").innerHTML=Math.floor(distance/(1000*60*60*24));
+  document.getElementById("hours").innerHTML=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+  document.getElementById("minutes").innerHTML=Math.floor((distance%(1000*60*60))/(1000*60));
+  document.getElementById("seconds").innerHTML=Math.floor((distance%(1000*60))/1000);
+}
+
+setInterval(countdown,1000);
+countdown();
+
+/* MUSIK AI KHUSUS TASYAKURAN */
+let audioCtx;
+let playing=false;
+let timer;
+const musicBtn=document.getElementById("musicBtn");
+
+function tone(freq,time,duration,type="sine",volume=0.035){
+  const osc=audioCtx.createOscillator();
+  const gain=audioCtx.createGain();
+
+  osc.type=type;
+  osc.frequency.setValueAtTime(freq,time);
+
+  gain.gain.setValueAtTime(0,time);
+  gain.gain.linearRampToValueAtTime(volume,time+.08);
+  gain.gain.exponentialRampToValueAtTime(0.001,time+duration);
+
+  osc.connect(gain);
+  gain.connect(audioCtx.destination);
+
+  osc.start(time);
+  osc.stop(time+duration+.1);
+}
+
+function playTasyakuranMusic(){
+  if(!audioCtx){
+    audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+  }
+
+  function loop(){
+    if(!playing)return;
+
+    const now=audioCtx.currentTime;
+
+    const chords=[
+      [293.66,349.23,440.00],
+      [261.63,329.63,392.00],
+      [246.94,293.66,392.00],
+      [220.00,277.18,349.23]
+    ];
+
+    chords.forEach((chord,index)=>{
+      const start=now+index*2.1;
+
+      chord.forEach(note=>{
+        tone(note,start,1.95,"sine",0.028);
+      });
+
+      tone(chord[0]/2,start,1.95,"triangle",0.024);
+
+      const melody=[
+        chord[0]*2,
+        chord[1]*2,
+        chord[2]*2,
+        chord[1]*2,
+        chord[0]*2
+      ];
+
+      melody.forEach((note,i)=>{
+        tone(note,start+i*.34,.28,"sine",0.02);
+      });
+
+      tone(chord[2]*1.5,start+.78,.45,"sine",0.014);
+    });
+
+    timer=setTimeout(loop,8400);
+  }
+
+  loop();
+}
+
+function stopMusic(){
+  clearTimeout(timer);
+}
+
+musicBtn.addEventListener("click",()=>{
+  playing=!playing;
+
+  if(playing){
+    playTasyakuranMusic();
+    musicBtn.classList.add("playing");
+    musicBtn.innerHTML="♪";
+  }else{
+    stopMusic();
+    musicBtn.classList.remove("playing");
+    musicBtn.innerHTML="♫";
+  }
+});
+
+document.getElementById("openBtn").addEventListener("click",()=>{
+  if(!playing){
+    musicBtn.click();
+  }
+});
+</script>
+
+</body>
+</html>
